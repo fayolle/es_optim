@@ -1,5 +1,4 @@
 function [xn,err] = minimize_SPSA(x0, f, max_iter)
-% not sure what I am doing wrong?
 % https://www.jhuapl.edu/SPSA/PDF-SPSA/Matlab-SPSA_Alg.pdf
 
 a = 0.25;

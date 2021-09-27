@@ -1,10 +1,17 @@
 function [fval, x, funeval, err] = minimize_RP(fitfun, xstart, N, mu)
 % Algorithm Random Pursuit
 
-% fitfun name or function handle
-% N number of iterations
-% mu line search accuracy
+% Inputs
+% fitfun: name or function handle of function to minimize 
+% xtstart: starting solution 
+% N: number of iterations
+% mu: line search accuracy
+%
+% Outputs
+% fval: best found function value
+% x: best found solution 
 % funeval #function evaluations
+% err: array of errors 
 
 xn = xstart;
 err = [];
